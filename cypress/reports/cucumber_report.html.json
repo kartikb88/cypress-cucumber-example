@@ -1,0 +1,158 @@
+[
+  {
+    "description": "  I want to verify the Angular Component button",
+    "keyword": "Feature",
+    "name": "The Material Angular",
+    "line": 1,
+    "id": "the-material-angular",
+    "tags": [],
+    "uri": "Button Component Test.feature",
+    "elements": [
+      {
+        "id": "the-material-angular;checking-the-primary-button-color-as-blue",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Checking the Primary Button Color as Blue",
+        "tags": [
+          {
+            "name": "@button-test",
+            "line": 5
+          },
+          {
+            "name": "@smoke",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I open Material Angular page",
+            "result": {
+              "status": "passed",
+              "duration": 1277000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I see \"Components | Angular Material\" in the title",
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I click on Button Component",
+            "result": {
+              "status": "passed",
+              "duration": 154000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I verify the Primary Button for existance",
+            "result": {
+              "status": "passed",
+              "duration": 717000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I verify the Primary Button Background color should be \"Blue\"",
+            "result": {
+              "status": "passed",
+              "duration": 54000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "  I want to verify the Angular Component Calendar",
+    "keyword": "Feature",
+    "name": "The Calendar Test",
+    "line": 1,
+    "id": "the-calendar-test",
+    "tags": [],
+    "uri": "Calendar Test.feature",
+    "elements": [
+      {
+        "id": "the-calendar-test;entering-value-in-calendar-and-checking-its-functionality",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Entering value in calendar and checking its functionality",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I open Material Angular page",
+            "result": {
+              "status": "passed",
+              "duration": 940000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I see \"Components | Angular Material\" in the title",
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I click on Calendar Component",
+            "result": {
+              "status": "passed",
+              "duration": 161000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I verify the Calendar Component for existance",
+            "result": {
+              "status": "passed",
+              "duration": 2106000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I enter the Calendar date as today and verify the entered date",
+            "result": {
+              "status": "passed",
+              "duration": 605000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

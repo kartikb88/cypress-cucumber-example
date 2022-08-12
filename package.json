@@ -1,33 +1,33 @@
 {
-  "name": "cypress-cucumber-example",
+  "name": "cypress-with-cucumber",
   "version": "1.0.0",
-  "description": "Example of cypress with cucumber",
+  "description": "cypress with cucumber",
   "main": "index.js",
   "scripts": {
     "test": "cypress run --spec \"**/*.feature\"",
     "test:all": "cypress run --spec \"**/*.features\"",
-    "test_1":"npx cypress run ./node_modules/.bin/cypress-tags run -e TAGS='@smoke'"
+    "test_ci": "npx cypress run ./node_modules/.bin/cypress-tags run -e TAGS='@smoke'",
+    "features": "npm run test",
+    "reporter": "node \"cypress/support/cucumber-html-reporter.js\"",
+    "e2e_tests_with_report": "npm run features && npm run reporter"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TheBrainFamily/cypress-cucumber-example.git"
-  },
-  "keywords": [
-    "cypress",
-    "cucumber",
-    "testing"
-  ],
-  "author": "Lukasz Gandecki",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/TheBrainFamily/cypress-cucumber-example/issues"
-  },
-  "homepage": "https://github.com/TheBrainFamily/cypress-cucumber-example#readme",
+  "author": "",
+  "license": "",
   "dependencies": {
+    "chromium": "^3.0.3",
     "cypress": "^4.9.0",
     "cypress-cucumber-preprocessor": "^2.5.0"
   },
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "devDependencies": {
+    "cucumber-html-reporter": "^5.5.0"
   }
 }

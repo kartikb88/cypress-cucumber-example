@@ -1,6 +1,7 @@
 Feature: The Material Angular
 
   I want to verify the Angular Component button
+  
   @button-test @smoke
   Scenario: Checking the Primary Button Color as Blue
     Given I open Material Angular page

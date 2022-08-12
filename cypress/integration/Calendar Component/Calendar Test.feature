@@ -2,7 +2,7 @@ Feature: The Calendar Test
 
   I want to verify the Angular Component Calendar
 
- @smoke
+  @smoke
   Scenario: Entering value in calendar and checking its functionality
    Given I open Material Angular page
     Then I see "Components | Angular Material" in the title
