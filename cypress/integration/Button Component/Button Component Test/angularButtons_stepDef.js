@@ -8,7 +8,7 @@ Given(`I open Material Angular page`, () => {
 And(`I click on Button Component`, () => {
   cy.contains("Button").click();
 });
-Then(`I verify the Primary Button for existance`, (color) => {
+Then(`I verify the Primary Button for existance`, () => {
   expect(
     cy.get(
       ":nth-child(3) > .example-button-row > .mat-primary > .mat-button-wrapper"
@@ -27,3 +27,19 @@ Then(
       .should("equal", colorcode);
   }
 );
+
+Then(`I verify the Accent Button for existance`, () => {
+  expect(
+    cy.get(':nth-child(3) > .example-button-row > .mat-accent')
+  ).to.exist;
+});
+
+Then(
+  `I verify the Accent Button Background color should be {string}`,
+  (color) => {
+    cy.get(':nth-child(3) > .example-button-row > .mat-accent')
+      .invoke("css", "background-color")
+      .should("equal", 'rgb(255, 64, 129)');
+  }
+);
+

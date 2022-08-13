@@ -32,7 +32,7 @@
             "name": "I open Material Angular page",
             "result": {
               "status": "passed",
-              "duration": 1277000000
+              "duration": 511000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "I see \"Components | Angular Material\" in the title",
             "result": {
               "status": "passed",
-              "duration": 17000000
+              "duration": 12000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "I click on Button Component",
             "result": {
               "status": "passed",
-              "duration": 154000000
+              "duration": 140000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "I verify the Primary Button for existance",
             "result": {
               "status": "passed",
-              "duration": 717000000
+              "duration": 835000000
             }
           },
           {
@@ -72,7 +72,67 @@
             "name": "I verify the Primary Button Background color should be \"Blue\"",
             "result": {
               "status": "passed",
-              "duration": 54000000
+              "duration": 24000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "the-material-angular;checking-the-accent-button-color-as-pink",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Checking the Accent Button Color as Pink",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I open Material Angular page",
+            "result": {
+              "status": "passed",
+              "duration": 495000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I see \"Components | Angular Material\" in the title",
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I click on Button Component",
+            "result": {
+              "status": "passed",
+              "duration": 134000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I verify the Accent Button for existance",
+            "result": {
+              "status": "passed",
+              "duration": 387000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I verify the Accent Button Background color should be \"Pink\"",
+            "result": {
+              "status": "passed",
+              "duration": 23000000
             }
           }
         ]
